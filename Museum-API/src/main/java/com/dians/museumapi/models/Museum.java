@@ -1,12 +1,10 @@
 package com.dians.museumapi.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 @Data
 @NoArgsConstructor
@@ -15,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "museums")
 public class Museum {
     @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    @NonNull
     @Column(name = "museum_id")
     private Long museumId;
 
@@ -24,4 +24,16 @@ public class Museum {
     private String city;
 
     private String address;
+
+    private String email;
+
+    @Column(name = "working_hours")
+    private String workingHours;
+
+    private String phone;
+
+    private String website;
+
+    @NonNull
+    private String location;
 }
