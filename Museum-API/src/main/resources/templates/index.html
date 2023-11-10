@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        li{
+            font-size: 20px;
+            padding: 15px 0;
+        }
+        ul{
+          list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<h1>All museums</h1>
+<ul>
+    <li th:each="m : ${museumList}">
+        <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
