@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.10 (3800751 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="172180530" visible="true" version="20" changeset="140970965" timestamp="2023-09-08T06:51:36Z" user="tg4567" uid="12500589">
+  <nd ref="1831127085"/>
+  <nd ref="1831127083"/>
+  <nd ref="5339314471"/>
+  <nd ref="1831127084"/>
+  <nd ref="1831127081"/>
+  <nd ref="1831127085"/>
+  <tag k="addr:city" v="Cкoпje"/>
+  <tag k="addr:city:en" v="Skopje"/>
+  <tag k="addr:country" v="MK"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="1000"/>
+  <tag k="addr:street" v="11 Март"/>
+  <tag k="building" v="public"/>
+  <tag k="building:levels" v="3"/>
+  <tag k="email" v="mmb@mmb.org.mk"/>
+  <tag k="fax" v="+389 2 3256 668"/>
+  <tag k="fee" v="yes"/>
+  <tag k="int_name" v="Muzej na Makedonskata borba"/>
+  <tag k="name" v="Музеј на македонската борба"/>
+  <tag k="name:de" v="Museum des mazedonischen Kampfes"/>
+  <tag k="name:en" v="Museum of the Macedonian struggle"/>
+  <tag k="name:tr" v="Museum of the"/>
+  <tag k="opening_hours" v="Tu-Su 10:00-18:00"/>
+  <tag k="phone" v="+389 2 3256 667"/>
+  <tag k="roof:levels" v="0"/>
+  <tag k="roof:shape" v="hipped"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://mmb.org.mk/w/"/>
+  <tag k="wheelchair" v="limited"/>
+  <tag k="wikidata" v="Q986531"/>
+  <tag k="wikimedia_commons" v="Category:Museum of the Macedonian Struggle (Skopje)"/>
+  <tag k="wikipedia" v="en:Museum of the Macedonian Struggle (Skopje)"/>
+ </way>
+</osm>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (2067067 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="217931793" visible="true" version="8" changeset="131107400" timestamp="2023-01-10T13:41:14Z" user="AlexandraSaša" uid="12784710">
+  <nd ref="2272386886"/>
+  <nd ref="2272386851"/>
+  <nd ref="2272386836"/>
+  <nd ref="2272386871"/>
+  <nd ref="2272386833"/>
+  <nd ref="2272386855"/>
+  <nd ref="2272386891"/>
+  <nd ref="2272386861"/>
+  <nd ref="2272386848"/>
+  <nd ref="2272386847"/>
+  <nd ref="2272386878"/>
+  <nd ref="2272386881"/>
+  <nd ref="2272386840"/>
+  <nd ref="2272386886"/>
+  <tag k="area" v="yes"/>
+  <tag k="foot" v="yes"/>
+  <tag k="int_name" v="Bay of Bones"/>
+  <tag k="man_made" v="pier"/>
+  <tag k="motor_vehicle" v="no"/>
+  <tag k="name" v="Залив на Коските"/>
+  <tag k="name:cs" v="Záliv kostí"/>
+  <tag k="name:en" v="Bay of Bones"/>
+  <tag k="opening_hours" v="Tu-Su 09:00-16:15"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="tourism_1" v="attraction"/>
+ </way>
+</osm>

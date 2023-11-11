@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768572 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="3695988841" visible="true" version="1" changeset="33324150" timestamp="2015-08-13T20:51:38Z" user="Shooky" uid="3145479" lat="41.9664768" lon="22.7729986">
+  <tag k="name" v="Музеј на град Делчево"/>
+  <tag k="name:en" v="City Museum"/>
+  <tag k="tourism" v="museum"/>
+ </node>
+</osm>

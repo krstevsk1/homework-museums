@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (1855399 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="1853704787" visible="true" version="3" changeset="79406796" timestamp="2020-01-10T07:49:43Z" user="tasevnikola" uid="10638691" lat="41.1871817" lon="22.7221034">
+  <tag k="name" v="Музеј на Дојран"/>
+  <tag k="tourism" v="museum"/>
+ </node>
+</osm>

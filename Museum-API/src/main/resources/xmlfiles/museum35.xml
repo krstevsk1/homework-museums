@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768594 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="534925163" visible="true" version="7" changeset="76243085" timestamp="2019-10-26T13:12:24Z" user="gnckdr" uid="10392631" lat="41.1123610" lon="20.7961416">
+  <tag k="addr:housenumber" v="62"/>
+  <tag k="addr:street" v="Цар Самоил"/>
+  <tag k="building" v="house"/>
+  <tag k="int_name" v="Robev Family House"/>
+  <tag k="name" v="Куќа на Робевци"/>
+  <tag k="name:en" v="Robev Family House"/>
+  <tag k="name:fr" v="Maison de la famille Robev — Musée archéologique de la ville"/>
+  <tag k="name:tr" v="Robevi Evi"/>
+  <tag k="name:zh" v="罗贝夫家族宅邸国家博物馆"/>
+  <tag k="opening_hours" v="Tu-Su 09:00-14:00"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://muzejohrid.mk/en/house-of-robev-family"/>
+ </node>
+</osm>

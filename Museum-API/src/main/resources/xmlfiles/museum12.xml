@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768588 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="217568679" visible="true" version="5" changeset="75363796" timestamp="2019-10-07T08:37:16Z" user="Gobik" uid="25561">
+  <nd ref="2268544543"/>
+  <nd ref="2268544549"/>
+  <nd ref="2268544558"/>
+  <nd ref="2268544551"/>
+  <nd ref="2268544557"/>
+  <nd ref="2268544546"/>
+  <nd ref="2268544563"/>
+  <nd ref="2268544566"/>
+  <nd ref="2268544550"/>
+  <nd ref="2268544544"/>
+  <nd ref="2268544541"/>
+  <nd ref="2268544538"/>
+  <nd ref="2268544542"/>
+  <nd ref="2268544559"/>
+  <nd ref="2268544561"/>
+  <nd ref="2268544539"/>
+  <nd ref="2268544553"/>
+  <nd ref="2268544540"/>
+  <nd ref="2268544545"/>
+  <nd ref="2268544554"/>
+  <nd ref="2268544548"/>
+  <nd ref="2268544564"/>
+  <nd ref="2268544556"/>
+  <nd ref="2268544560"/>
+  <nd ref="2268544555"/>
+  <nd ref="2268544543"/>
+  <tag k="artist_name" v="Jovan Grabulovski;Iskra Grabuloska"/>
+  <tag k="building" v="yes"/>
+  <tag k="historic" v="monument"/>
+  <tag k="image" v="https://upload.wikimedia.org/wikipedia/commons/f/fe/%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%B8%D1%83%D0%BC_-_%D0%9A%D1%80%D1%83%D1%88%D0%B5%D0%B2%D0%BE.jpg"/>
+  <tag k="name" v="Македониум"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q2717956"/>
+ </way>
+</osm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768583 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="229930502" visible="true" version="13" changeset="142318689" timestamp="2023-10-08T19:49:38Z" user="A_Ku" uid="3423733">
+  <nd ref="2384661789"/>
+  <nd ref="2384661802"/>
+  <nd ref="2384661787"/>
+  <nd ref="2384661800"/>
+  <nd ref="2384661799"/>
+  <nd ref="2384661794"/>
+  <nd ref="2384661763"/>
+  <nd ref="2384661801"/>
+  <nd ref="2384661753"/>
+  <nd ref="2384661774"/>
+  <nd ref="2384661754"/>
+  <nd ref="2384661769"/>
+  <nd ref="2384661762"/>
+  <nd ref="2384661796"/>
+  <nd ref="2384661778"/>
+  <nd ref="2384661777"/>
+  <nd ref="2384661791"/>
+  <nd ref="2384661755"/>
+  <nd ref="4128156199"/>
+  <nd ref="2384661750"/>
+  <nd ref="2384661781"/>
+  <nd ref="2384661789"/>
+  <tag k="addr:city" v="Cкoпje"/>
+  <tag k="addr:city:en" v="Skopje"/>
+  <tag k="addr:country" v="MK"/>
+  <tag k="addr:postcode" v="1000"/>
+  <tag k="building" v="public"/>
+  <tag k="fee" v="yes"/>
+  <tag k="int_name" v="Arheološki Muzej na Makedonija"/>
+  <tag k="name" v="Археолошки музеј на Македонија"/>
+  <tag k="name:de" v="Archäologisches Museum von Mazedonien"/>
+  <tag k="name:en" v="Archaeological Museum of Macedonia"/>
+  <tag k="name:pl" v="Muzeum Archeologiczne"/>
+  <tag k="name:tr" v="Kuzey Makedonya Arkeoloji Müzesi"/>
+  <tag k="opening_hours" v="Tu-Su 10:00-18:00"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q65295584"/>
+  <tag k="wikimedia_commons" v="Category:Archaeological Museum of Macedonia"/>
+  <tag k="wikipedia" v="mk:Археолошки музеј (Скопје)"/>
+ </way>
+</osm>

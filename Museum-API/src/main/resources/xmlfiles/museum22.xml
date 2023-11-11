@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768587 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="1143766963" visible="true" version="1" changeset="132385883" timestamp="2023-02-10T23:31:16Z" user="MACEDONICUS" uid="17808750">
+  <nd ref="10647549733"/>
+  <nd ref="10647549734"/>
+  <nd ref="10647549737"/>
+  <nd ref="10647549738"/>
+  <nd ref="10647549740"/>
+  <nd ref="10647549741"/>
+  <nd ref="10647549742"/>
+  <nd ref="10647549739"/>
+  <nd ref="10647549744"/>
+  <nd ref="10647549745"/>
+  <nd ref="10647549746"/>
+  <nd ref="10647549743"/>
+  <nd ref="10647549735"/>
+  <nd ref="10647549736"/>
+  <nd ref="10647549747"/>
+  <nd ref="10647549750"/>
+  <nd ref="10647549749"/>
+  <nd ref="10647549748"/>
+  <nd ref="10647549733"/>
+  <tag k="addr:city" v="Битола"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="7000"/>
+  <tag k="addr:street" v="Св. Климент Охридски"/>
+  <tag k="building" v="yes"/>
+  <tag k="museum" v="history"/>
+  <tag k="name" v="Музеј на Битола"/>
+  <tag k="name:en" v="Museum of Bitola"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q12906499"/>
+  <tag k="wikipedia" v="mk:Народен музеј - Битола"/>
+ </way>
+</osm>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768579 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="1217195019" visible="true" version="1" changeset="142892626" timestamp="2023-10-20T20:35:52Z" user="Margoulinot" uid="10352043">
+  <nd ref="9656080539"/>
+  <nd ref="11278281167"/>
+  <nd ref="11278281168"/>
+  <nd ref="11278281166"/>
+  <nd ref="9656080539"/>
+  <tag k="building" v="yes"/>
+  <tag k="museum" v="history"/>
+  <tag k="museum_type" v="national"/>
+  <tag k="name" v="Mémorial de Bitola"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

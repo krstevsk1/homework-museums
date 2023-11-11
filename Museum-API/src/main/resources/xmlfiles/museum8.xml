@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768577 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="172186249" visible="true" version="14" changeset="143284566" timestamp="2023-10-28T21:23:30Z" user="b-jazz-bot" uid="9451067">
+  <nd ref="1831180534"/>
+  <nd ref="1831180452"/>
+  <nd ref="5339314490"/>
+  <nd ref="5339314489"/>
+  <nd ref="1831180534"/>
+  <tag k="addr:city" v="Cкoпje"/>
+  <tag k="addr:city:en" v="Skopje"/>
+  <tag k="addr:country" v="MK"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="1000"/>
+  <tag k="addr:street" v="Самоилова"/>
+  <tag k="addr:street:en" v="Samoilova"/>
+  <tag k="building" v="public"/>
+  <tag k="email" v="info@holocaustfund.org.mk"/>
+  <tag k="fax" v="+389 2 3232310"/>
+  <tag k="historic" v="memorial"/>
+  <tag k="int_name" v="Memorijalen centar na holokaustot na Evreite na Makedonija"/>
+  <tag k="name" v="Меморијален центар на холокаустот на Евреите од Македонија"/>
+  <tag k="name:en" v="Holocaust Memorial Center for the Jews of Macedonia"/>
+  <tag k="name:tr" v="Holocaust Memorial Center for the Jews of Macedonia"/>
+  <tag k="name:zh" v="犹太人大屠杀纪念中心"/>
+  <tag k="phone" v="+389 2 3122697"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="https://www.holocaustfund.org/"/>
+  <tag k="wikidata" v="Q3333150"/>
+  <tag k="wikimedia_commons" v="Category:Holocaust Memorial Center for the Jews of Macedonia"/>
+  <tag k="wikipedia" v="en:Holocaust Memorial Center for the Jews of Macedonia"/>
+ </way>
+</osm>

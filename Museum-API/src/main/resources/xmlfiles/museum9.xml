@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768570 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="172348137" visible="true" version="11" changeset="140970965" timestamp="2023-09-08T06:51:36Z" user="tg4567" uid="12500589" lat="42.0057090" lon="21.4174425">
+  <tag k="contact:phone" v="+38923117669"/>
+  <tag k="fee" v="yes"/>
+  <tag k="name" v="Природонаучен Музеј"/>
+  <tag k="name:en" v="Macedonian Museum of Natural History"/>
+  <tag k="name:pl" v="Muzeum Przyrodnicze"/>
+  <tag k="name:tr" v="Ulusal Tarih Müzesi"/>
+  <tag k="opening_hours" v="Tu-Su 09:00-16:00"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q20567394"/>
+  <tag k="wikimedia_commons" v="Category:Macedonian Museum of Natural History"/>
+  <tag k="wikipedia" v="mk:Природонаучен музеј на Македонија"/>
+ </node>
+</osm>

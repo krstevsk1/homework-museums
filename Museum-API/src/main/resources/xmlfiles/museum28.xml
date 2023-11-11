@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768569 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="38580676" visible="true" version="3" changeset="22909532" timestamp="2014-06-13T13:59:00Z" user="side2sideful" uid="1627461">
+  <nd ref="456998883"/>
+  <nd ref="456998885"/>
+  <nd ref="456998886"/>
+  <nd ref="456998887"/>
+  <nd ref="456998883"/>
+  <tag k="building" v="yes"/>
+  <tag k="int_name" v="Magaza"/>
+  <tag k="name" v="Магаза"/>
+  <tag k="name:en" v="Magaza gallery"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

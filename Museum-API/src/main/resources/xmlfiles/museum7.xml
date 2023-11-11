@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768575 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="5360062" visible="true" version="4" changeset="70620946" timestamp="2019-05-25T22:52:06Z" user="bjankuloski" uid="158784">
+  <member type="way" ref="77127894" role="inner"/>
+  <member type="way" ref="32813025" role="outer"/>
+  <tag k="addr:city" v="Cкoпje"/>
+  <tag k="addr:city:en" v="Skopje"/>
+  <tag k="addr:country" v="MK"/>
+  <tag k="addr:postcode" v="1000"/>
+  <tag k="amenity" v="arts_centre"/>
+  <tag k="building" v="yes"/>
+  <tag k="description" v="Concert venue"/>
+  <tag k="int_name" v="Kursumli An"/>
+  <tag k="name" v="Куршумли-ан"/>
+  <tag k="note" v="Concert venue &amp; Lapidarium of the Museum of Macedonia"/>
+  <tag k="note:mk" v="Концертен двор и Лапидариум на Музејот на Македонија"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="type" v="multipolygon"/>
+  <tag k="wikidata" v="Q1273251"/>
+ </relation>
+</osm>

@@ -14,33 +14,29 @@
 <h1>Detailed view for <i th:text="${museum.getMuseumName()}"></i></h1>
 <br/>
 <table>
-    <tr th:if="${museum.getCity() != null}">
+    <tr th:if="${!#strings.isEmpty(museum.getCity())}">
         <td>City: </td>
         <td th:text="${museum.getCity()}"></td>
     </tr>
-    <tr th:if="${museum.getAddress() != null}">
+    <tr th:if="${!#strings.isEmpty(museum.getAddress())}">
         <td>Address: </td>
         <td th:text="${museum.getAddress()}"></td>
     </tr>
-    <tr th:if="${museum.getEmail() != null}">
+    <tr th:if="${!#strings.isEmpty(museum.getEmail())}">
         <td>E-mail: </td>
         <td th:text="${museum.getEmail()}"></td>
     </tr>
-    <tr th:if="${museum.getWorkingHours() != null}">
+    <tr th:if="${!#strings.isEmpty(museum.getWorkingHours())}">
         <td>Working hours: </td>
         <td th:text="${museum.getWorkingHours()}"></td>
     </tr>
-    <tr th:if="${museum.getPhone() != null}">
+    <tr th:if="${!#strings.isEmpty(museum.getPhone())}">
         <td>Phone: </td>
         <td th:text="${museum.getPhone()}"></td>
     </tr>
-    <tr th:if="${museum.getWebsite() != null}">
+    <tr th:if="${!#strings.isEmpty(museum.getWebsite())}">
         <td>Website: </td>
         <td><a th:href="${museum.getWebsite()}" th:text="${museum.getWebsite()}"></a></td>
-    </tr>
-    <tr th:if="${museum.getLocation() != null}">
-        <td>Location: </td>
-        <td><a th:href="${museum.getLocation()}">Click for a detailed map</a></td>
     </tr>
 </table>
 </body>

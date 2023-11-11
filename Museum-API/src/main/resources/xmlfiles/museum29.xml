@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768580 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="150596710" visible="true" version="2" changeset="44413924" timestamp="2016-12-15T04:24:17Z" user="alamero" uid="2927605">
+  <nd ref="1634988564"/>
+  <nd ref="1634988593"/>
+  <nd ref="1634988538"/>
+  <nd ref="1634988601"/>
+  <nd ref="1634988534"/>
+  <nd ref="1634988556"/>
+  <nd ref="1634988488"/>
+  <nd ref="1634988673"/>
+  <nd ref="1634988461"/>
+  <nd ref="1634988521"/>
+  <nd ref="1634988655"/>
+  <nd ref="1634988552"/>
+  <nd ref="1634988468"/>
+  <nd ref="1634988576"/>
+  <nd ref="1634988617"/>
+  <nd ref="1634988619"/>
+  <nd ref="1634988558"/>
+  <nd ref="1634988570"/>
+  <nd ref="1634988691"/>
+  <nd ref="1634988684"/>
+  <nd ref="1634988588"/>
+  <nd ref="1634988598"/>
+  <nd ref="1634988574"/>
+  <nd ref="1634988564"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Спомен Костурница"/>
+  <tag k="name:en" v="Kosturnica Memorial"/>
+  <tag k="name:int" v="Spomen Kosturnica"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

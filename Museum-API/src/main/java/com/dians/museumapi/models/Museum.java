@@ -13,8 +13,7 @@ import lombok.NonNull;
 @Table(name = "museums")
 public class Museum {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @NonNull
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "museum_id")
     private Long museumId;
 
@@ -36,4 +35,15 @@ public class Museum {
 
     @NonNull
     private String location;
+
+    public Museum(String museumName, String city, String address, String email, String workingHours, String phone, String website, @NonNull String location) {
+        this.museumName = museumName;
+        this.city = city;
+        this.address = address;
+        this.email = email;
+        this.workingHours = workingHours;
+        this.phone = phone;
+        this.website = website;
+        this.location = location;
+    }
 }

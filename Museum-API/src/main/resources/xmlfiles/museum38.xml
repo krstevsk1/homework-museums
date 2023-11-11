@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768584 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="217561610" visible="true" version="2" changeset="128291960" timestamp="2022-10-31T10:51:48Z" user="fuck you OSM" uid="9545352">
+  <nd ref="2268460395"/>
+  <nd ref="2268460428"/>
+  <nd ref="2268460386"/>
+  <nd ref="2268460437"/>
+  <nd ref="2268460431"/>
+  <nd ref="2268460438"/>
+  <nd ref="2268460375"/>
+  <nd ref="2268460356"/>
+  <nd ref="2268460400"/>
+  <nd ref="2268460394"/>
+  <nd ref="2268460366"/>
+  <nd ref="2268460357"/>
+  <nd ref="2268460395"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Музеј на НОВ"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>
