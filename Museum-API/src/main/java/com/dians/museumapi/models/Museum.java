@@ -33,10 +33,7 @@ public class Museum {
 
     private String website;
 
-    @NonNull
-    private String location;
-
-    public Museum(String museumName, String city, String address, String email, String workingHours, String phone, String website, @NonNull String location) {
+    public Museum(String museumName, String city, String address, String email, String workingHours, String phone, String website) {
         this.museumName = museumName;
         this.city = city;
         this.address = address;
@@ -44,6 +41,5 @@ public class Museum {
         this.workingHours = workingHours;
         this.phone = phone;
         this.website = website;
-        this.location = location;
     }
 }
