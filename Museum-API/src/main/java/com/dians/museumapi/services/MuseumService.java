@@ -64,7 +64,7 @@ public class MuseumService {
                         }
                     }
                 }
-                Museum m = new Museum(museumName, city, address, email, workingHours, phone, website, "");
+                Museum m = new Museum(museumName, city, address, email, workingHours, phone, website);
                 if(museumRepo.findByMuseumName(m.getMuseumName()).isEmpty()){
                     museumRepo.save(m);
                 }
