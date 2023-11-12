@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768576 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="443072144" visible="true" version="5" changeset="68502694" timestamp="2019-03-25T11:35:04Z" user="4a4arA" uid="4107367">
+  <nd ref="4407095173"/>
+  <nd ref="4407095174"/>
+  <nd ref="4425404525"/>
+  <nd ref="4425404526"/>
+  <nd ref="4425404527"/>
+  <nd ref="6348420555"/>
+  <nd ref="4407095173"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Безистен Штип"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q32963909"/>
+  <tag k="wikipedia" v="mk:Безистен (Штип)"/>
+ </way>
+</osm>

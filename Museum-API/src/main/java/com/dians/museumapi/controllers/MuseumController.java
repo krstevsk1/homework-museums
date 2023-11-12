@@ -11,7 +11,6 @@ import java.util.List;
 @RestController
 public class MuseumController {
     /// ahsgfvhsavf sadkjfbf 123213123
-    //hello
     @Autowired
     private MuseumRepo museumRepo;
 

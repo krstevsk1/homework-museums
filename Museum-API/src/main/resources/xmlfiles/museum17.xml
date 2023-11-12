@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768568 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="10932198705" visible="true" version="1" changeset="136637348" timestamp="2023-05-27T20:29:33Z" user="Georgi Piruze" uid="1528073" lat="41.0748026" lon="21.3299172">
+  <tag k="name:en" v="Auto and etno museum &quot;Filip&quot;"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.muzejkrklino.mk/en/"/>
+ </node>
+</osm>

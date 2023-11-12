@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.10 (3800737 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="176051871" visible="true" version="8" changeset="140970965" timestamp="2023-09-08T06:51:36Z" user="tg4567" uid="12500589">
+  <nd ref="1866191465"/>
+  <nd ref="1866191459"/>
+  <nd ref="5731830727"/>
+  <nd ref="5731830728"/>
+  <nd ref="5731830726"/>
+  <nd ref="5731830729"/>
+  <nd ref="5731830725"/>
+  <nd ref="5731830730"/>
+  <nd ref="5731830724"/>
+  <nd ref="5731830731"/>
+  <nd ref="5731830723"/>
+  <nd ref="5731830732"/>
+  <nd ref="5731830722"/>
+  <nd ref="5731830733"/>
+  <nd ref="5731830721"/>
+  <nd ref="5731830734"/>
+  <nd ref="5731830735"/>
+  <nd ref="1866191463"/>
+  <nd ref="5731830736"/>
+  <nd ref="5731830737"/>
+  <nd ref="5731830720"/>
+  <nd ref="5731830738"/>
+  <nd ref="5731830719"/>
+  <nd ref="5731830739"/>
+  <nd ref="5731830718"/>
+  <nd ref="5731830740"/>
+  <nd ref="1866191468"/>
+  <nd ref="1866191471"/>
+  <nd ref="1866191465"/>
+  <tag k="addr:city" v="Cкoпje"/>
+  <tag k="addr:city:en" v="Skopje"/>
+  <tag k="addr:country" v="MK"/>
+  <tag k="addr:postcode" v="1000"/>
+  <tag k="addr:street" v="Македонија"/>
+  <tag k="addr:street:en" v="Makedonija"/>
+  <tag k="building" v="yes"/>
+  <tag k="email" v="info@memorialhouseofmotherteresa.org"/>
+  <tag k="fee" v="no"/>
+  <tag k="int_name" v="Muzej-kuḱa na Majka Tereza"/>
+  <tag k="name" v="Спомен куќа на Мајка Тереза"/>
+  <tag k="name:en" v="Memorial House of Mother Teresa"/>
+  <tag k="name:tr" v="Rahibe Terasa Anıt Evi"/>
+  <tag k="name:zh" v="特蕾莎修女纪念馆"/>
+  <tag k="opening_hours" v="Mo-Fr 09:00-20:00, Sa-Su 09:00-14:00"/>
+  <tag k="phone" v="+389 2 3290674"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.memorialhouseofmotherteresa.org/"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q587617"/>
+  <tag k="wikimedia_commons" v="Category:Mother Teresa Memorial Home (Skopje)"/>
+  <tag k="wikipedia" v="en:Memorial House of Mother Teresa"/>
+ </way>
+</osm>

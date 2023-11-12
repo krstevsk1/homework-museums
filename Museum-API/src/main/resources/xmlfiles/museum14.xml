@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768595 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="1143774305" visible="true" version="1" changeset="132386642" timestamp="2023-02-11T00:09:21Z" user="MACEDONICUS" uid="17808750">
+  <nd ref="10647622855"/>
+  <nd ref="10647622856"/>
+  <nd ref="10647622857"/>
+  <nd ref="10647622858"/>
+  <nd ref="10647622855"/>
+  <tag k="addr:city" v="Прилеп"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="7500"/>
+  <tag k="addr:street" v="Мара Јосифоска-Ѓурѓа"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Меморијален музеј Народен херој Кузман Јосифоски-Питу"/>
+  <tag k="name:en" v="People's hero Kuzman Josifoski-Pitu Memorial museum"/>
+  <tag k="name:mk" v="Меморијален музеј Народен херој Кузман Јосифоски-Питу"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q97229937"/>
+  <tag k="wikipedia" v="mk:Меморијален музеј „Кузман Јосифоски-Питу“"/>
+ </way>
+</osm>

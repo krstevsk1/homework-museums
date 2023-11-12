@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768577 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="529811458" visible="true" version="3" changeset="58613750" timestamp="2018-05-02T12:47:08Z" user="borces" uid="131662" lat="41.4343634" lon="22.0163228">
+  <tag k="name" v="Музеј Галерија Кавадарци"/>
+  <tag k="name:en" v="Muzej Galerija Kavadarci"/>
+  <tag k="tourism" v="museum"/>
+ </node>
+</osm>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.10 (3800738 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="176040285" visible="true" version="9" changeset="143282463" timestamp="2023-10-28T20:32:26Z" user="donovaly" uid="1730904">
+  <nd ref="1866027751"/>
+  <nd ref="1866027765"/>
+  <nd ref="1866027756"/>
+  <nd ref="1866027750"/>
+  <nd ref="1866027754"/>
+  <nd ref="1866027752"/>
+  <nd ref="11296257711"/>
+  <nd ref="11296257710"/>
+  <nd ref="1866027751"/>
+  <tag k="addr:city" v="Cкoпje"/>
+  <tag k="addr:city:en" v="Skopje"/>
+  <tag k="addr:country" v="MK"/>
+  <tag k="addr:postcode" v="1000"/>
+  <tag k="alt_name" v="Стара Железничка Станица"/>
+  <tag k="building" v="yes"/>
+  <tag k="fee" v="yes"/>
+  <tag k="name" v="Музеј на Град Скопје"/>
+  <tag k="name:en" v="Museum of the City of Skopje"/>
+  <tag k="name:pl" v="Muzeum Miasta Skopje"/>
+  <tag k="phone" v="+389 2 3114742"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.mgs.org.mk/"/>
+  <tag k="wikidata" v="Q922143"/>
+  <tag k="wikimedia_commons" v="Category:Museum of the City of Skopje"/>
+  <tag k="wikipedia" v="en:Museum of the City of Skopje"/>
+ </way>
+</osm>

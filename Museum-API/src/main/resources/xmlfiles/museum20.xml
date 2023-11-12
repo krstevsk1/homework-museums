@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768571 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="1054395729" visible="true" version="1" changeset="120123940" timestamp="2022-04-24T13:15:53Z" user="fuck you OSM" uid="9545352">
+  <nd ref="9689688823"/>
+  <nd ref="9689688824"/>
+  <nd ref="9689688825"/>
+  <nd ref="9689688826"/>
+  <nd ref="9689688823"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Спомен-дом Блаже Конески"/>
+  <tag k="name:bg" v="Конева къща"/>
+  <tag k="name:en" v="Blazhe Koneski Memorial House"/>
+  <tag k="name:mk" v="Спомен-дом Блаже Конески"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q12910621"/>
+  <tag k="wikipedia" v="mk:Спомен-дом „Блаже Конески“"/>
+ </way>
+</osm>

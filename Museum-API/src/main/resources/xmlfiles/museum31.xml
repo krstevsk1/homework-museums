@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768572 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="5699016423" visible="true" version="3" changeset="129912573" timestamp="2022-12-09T19:27:04Z" user="MACEDONICUS" uid="17808750" lat="41.0240503" lon="21.0506131">
+  <tag k="name" v="Eтнолошки музеј"/>
+  <tag k="name:en" v="Ethnographic museum"/>
+  <tag k="tourism" v="museum"/>
+ </node>
+</osm>

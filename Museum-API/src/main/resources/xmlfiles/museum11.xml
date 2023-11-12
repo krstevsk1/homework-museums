@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768568 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="224254694" visible="true" version="4" changeset="98385675" timestamp="2021-01-29T19:57:19Z" user="fuck you OSM" uid="9545352">
+  <nd ref="2330742586"/>
+  <nd ref="2330742591"/>
+  <nd ref="2330742589"/>
+  <nd ref="2330742585"/>
+  <nd ref="2330742586"/>
+  <tag k="addr:city" v="Крушево"/>
+  <tag k="addr:housenumber" v="44А"/>
+  <tag k="addr:postcode" v="7550"/>
+  <tag k="addr:street" v="Димитар Бербероски - Таќа Бербер"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Музеј на Илинденското востание и Крушевската Република"/>
+  <tag k="name:en" v="Museum of the Ilinden Uprising and the Republic of Krushevo"/>
+  <tag k="phone" v="+38970619597;+38970356621"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q12287450"/>
+  <tag k="wikipedia" v="mk:Музеј на Илинденското востание и Крушевската Република"/>
+ </way>
+</osm>

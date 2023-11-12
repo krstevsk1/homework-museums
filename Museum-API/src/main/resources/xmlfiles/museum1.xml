@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (1855388 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="32887087" visible="true" version="12" changeset="140970965" timestamp="2023-09-08T06:51:36Z" user="tg4567" uid="12500589">
+  <nd ref="370404760"/>
+  <nd ref="370404762"/>
+  <nd ref="370404766"/>
+  <nd ref="370404768"/>
+  <nd ref="1830951668"/>
+  <nd ref="1830951677"/>
+  <nd ref="370404771"/>
+  <nd ref="370404773"/>
+  <nd ref="370404774"/>
+  <nd ref="370404775"/>
+  <nd ref="370404778"/>
+  <nd ref="370404781"/>
+  <nd ref="370404760"/>
+  <tag k="addr:city" v="Cкoпje"/>
+  <tag k="addr:city:en" v="Skopje"/>
+  <tag k="addr:country" v="MK"/>
+  <tag k="addr:postcode" v="1000"/>
+  <tag k="addr:street" v="Самоилова"/>
+  <tag k="addr:street:en" v="Samoilova"/>
+  <tag k="amenity" v="arts_centre"/>
+  <tag k="building" v="yes"/>
+  <tag k="charge" v="50 MKD"/>
+  <tag k="email" v="msu-info@msuskopje.org.mk"/>
+  <tag k="fax" v="+389 2 3110123"/>
+  <tag k="fee" v="yes"/>
+  <tag k="name" v="Музеј на современата уметност"/>
+  <tag k="name:en" v="Contemporary Art Museum of Macedonia"/>
+  <tag k="name:pl" v="Muzeum Sztuki Współczesnej"/>
+  <tag k="name:zh" v="当代艺术博物馆"/>
+  <tag k="opening_hours" v="Tu-Sa 10:00-15:00; Su 09:00-13:00"/>
+  <tag k="phone" v="+389 2 3117734"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="https://msu.mk/home/"/>
+  <tag k="wikidata" v="Q3329592"/>
+  <tag k="wikimedia_commons" v="Category:Contemporary Art Museum (North Macedonia)"/>
+  <tag k="wikipedia" v="mk:Музеј на современата уметност (Скопје)"/>
+ </way>
+</osm>

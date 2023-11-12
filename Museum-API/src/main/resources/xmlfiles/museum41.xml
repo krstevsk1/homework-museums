@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768580 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="478699817" visible="true" version="2" changeset="18038361" timestamp="2013-09-26T03:24:23Z" user="bjankuloski" uid="158784" lat="41.7077548" lon="22.8566138">
+  <tag k="name" v="Музеј на град Берово"/>
+  <tag k="name:en" v="Berovo Town Museum"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="website" v="http://www.berovo.gov.mk/index.php?option=com_content&amp;view=article&amp;id=76&amp;Itemid=117"/>
+ </node>
+</osm>

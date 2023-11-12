@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768593 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="839150822" visible="true" version="1" changeset="89712804" timestamp="2020-08-20T21:45:38Z" user="cvetkovski" uid="614692">
+  <nd ref="7830690526"/>
+  <nd ref="7830690527"/>
+  <nd ref="7830690528"/>
+  <nd ref="7830690529"/>
+  <nd ref="7830690526"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Народен Музеј"/>
+  <tag k="tourism" v="museum"/>
+ </way>
+</osm>

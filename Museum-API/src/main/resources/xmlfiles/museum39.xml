@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768579 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <way id="896149100" visible="true" version="2" changeset="97649376" timestamp="2021-01-17T19:02:14Z" user="fuck you OSM" uid="9545352">
+  <nd ref="8330162406"/>
+  <nd ref="8330162407"/>
+  <nd ref="8330162408"/>
+  <nd ref="8330162409"/>
+  <nd ref="8330162406"/>
+  <tag k="addr:city" v="Крушево"/>
+  <tag k="addr:housenumber" v="0"/>
+  <tag k="addr:postcode" v="7550"/>
+  <tag k="addr:street" v="Тома Никлев"/>
+  <tag k="building" v="yes"/>
+  <tag k="museum" v="history"/>
+  <tag k="name" v="Леарница"/>
+  <tag k="name:en" v="Foundry"/>
+  <tag k="name:mk" v="Леарница"/>
+  <tag k="phone" v="+38970356621;+38975202123"/>
+  <tag k="tourism" v="museum"/>
+  <tag k="wikidata" v="Q12284846"/>
+  <tag k="wikipedia" v="mk:Леарница (Крушево)"/>
+ </way>
+</osm>

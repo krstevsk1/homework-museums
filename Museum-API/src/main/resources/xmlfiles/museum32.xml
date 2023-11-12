@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.9 (3768597 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="9241877277" visible="true" version="1" changeset="113629537" timestamp="2021-11-10T23:27:13Z" user="1Ana P" uid="14437284" lat="41.4354106" lon="22.6364291">
+  <tag k="name" v="Museum Strumica"/>
+  <tag k="tourism" v="museum"/>
+ </node>
+</osm>
