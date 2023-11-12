@@ -2,26 +2,24 @@ package com.dians.museumapi.controllers;
 
 import com.dians.museumapi.models.Museum;
 import com.dians.museumapi.repositories.MuseumRepo;
-import com.dians.museumapi.repositories.XmlToDatabase;
+import com.dians.museumapi.services.MuseumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 @Controller
 @RequestMapping("/museums")
 public class MuseumController {
     @Autowired
     private MuseumRepo museumRepo;
     @Autowired
-    private XmlToDatabase xmlToDatabase;
+    private MuseumService museumService;
     @GetMapping()
     public String getHomePage(Model model){
-        xmlToDatabase.parseFiles();
+        museumService.parseFiles();
         model.addAttribute("museumList", museumRepo.findAll());
         return "index";
     }

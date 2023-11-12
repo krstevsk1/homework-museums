@@ -1,8 +1,8 @@
-package com.dians.museumapi.repositories;
+package com.dians.museumapi.services;
 
 import com.dians.museumapi.models.Museum;
+import com.dians.museumapi.repositories.MuseumRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -12,20 +12,12 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
-public class XmlToDatabase {
+public class MuseumService {
     @Autowired
     private MuseumRepo museumRepo;
 
-//    public boolean correctValue(String key){
-//        return key.equals("name:en") || key.equals("addr:city:en") || key.equals("addr:street") || key.equals("email") || key.equals("opening_hours")
-//                || key.equals("phone") || key.equals("website");
-//    }
     public void parseFiles() {
         for (int j = 1; j <= 47; j++){
             try {
@@ -48,10 +40,6 @@ public class XmlToDatabase {
                         Element element = (Element) node;
                         String key = element.getAttribute("k");
                         String value = element.getAttribute("v");
-
-//                    if (correctValue(key)) {
-//                        System.out.println(value);
-//                    }
 
                         if (key.equals("name:en") || key.equals("name")){
                             museumName = value;
