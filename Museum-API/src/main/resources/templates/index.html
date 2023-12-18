@@ -15,6 +15,11 @@
 </head>
 <body>
 <h1>All museums</h1>
+<div class="search-bar">
+    <form>
+        <input id="search" type="text" class="input" placeholder="search..."/>
+    </form>
+</div>
 <ol>
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
