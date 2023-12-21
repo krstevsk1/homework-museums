@@ -12,7 +12,7 @@ public class Role implements GrantedAuthority {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "role_id")
-    private Integer roleId;
+    private Long roleId;
 
     private String authority;
 
@@ -24,7 +24,7 @@ public class Role implements GrantedAuthority {
         this.authority = authority;
     }
 
-    public Role(Integer roleId, String authority) {
+    public Role(Long roleId, String authority) {
         this.roleId = roleId;
         this.authority = authority;
     }
