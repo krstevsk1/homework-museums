@@ -4,14 +4,14 @@ import com.dians.museumapi.models.Museum;
 import com.dians.museumapi.models.User;
 import com.dians.museumapi.repositories.MuseumRepo;
 import com.dians.museumapi.services.MuseumService;
+import com.dians.museumapi.services.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/museums")
@@ -21,13 +21,18 @@ public class MuseumController {
     private MuseumRepo museumRepo;
     @Autowired
     private MuseumService museumService;
+    @Autowired
+    private UserService userService;
 
     @GetMapping()
     public String getHomePage(HttpServletRequest request, Model model){
         museumService.parseFiles();
-
         User user = (User) request.getSession().getAttribute("user");
-        model.addAttribute("user", user);
+        User user2 = new User();
+        if (user != null){
+            user2 = userService.loadUserByUsername(user.getUsername());
+        }
+        model.addAttribute("user", user2);
         model.addAttribute("museumList", museumRepo.findAll());
         return "index";
     }
@@ -40,5 +45,43 @@ public class MuseumController {
             return "detailsMuseum";
         }
         return "redirect:/museums";
+    }
+
+    @PostMapping("/addToFavorites/{museumId}")
+    public String addMuseumToUser(@PathVariable Long museumId, HttpServletRequest req){
+        User user = (User) req.getSession().getAttribute("user");
+        if (user == null){
+            return "redirect:/auth/login";
+        }
+        Optional<Museum> museum = museumService.findMuseumById(museumId);
+        userService.addMuseumToUser(museum.get().getMuseumId(), user.getUsername());
+        return "redirect:/museums";
+    }
+
+    @PostMapping("/removeFromFavorites/{museumId}")
+    public String removeMuseumToUser(@PathVariable Long museumId, HttpServletRequest req){
+        Optional<Museum> museum = museumService.findMuseumById(museumId);
+        User user = (User) req.getSession().getAttribute("user");
+        if (user == null){
+            return "redirect:/auth/login";
+        }
+        userService.removeMuseumFromUser(museum.get().getMuseumId(), user.getUsername());
+        return "redirect:/museums";
+    }
+
+    @GetMapping("/myMuseums")
+    public String getMyMuseums(HttpServletRequest req, Model model){
+        User user = (User) req.getSession().getAttribute("user");
+        //User user2 = userService.loadUserByUsername(user.getUsername());
+        User user2 = new User();
+        if (user != null){
+            user2 = userService.loadUserByUsername(user.getUsername());
+        }
+        if (user == null){
+            return "redirect:/auth/login";
+        }
+        model.addAttribute("user", user2);
+        model.addAttribute("museums", user2.getMuseums());
+        return "my-museums";
     }
 }

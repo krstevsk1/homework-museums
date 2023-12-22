@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My museums</title>
+    <style>
+        a{
+            text-decoration: none;
+            display: inline-block;
+        }
+        li{
+            font-size: 20px;
+            padding: 15px 0;
+        }
+
+        form{
+            display: inline-block;
+        }
+
+        .removes button{
+            background-color: lightcoral;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .adds button{
+            background-color: lawngreen;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<h3 th:text="'Hello, ' + ${user.getUsername()} + '. As of this moment these are the musesums that you want to visit.'"></h3>
+<p>Favorite museums:</p>
+<ol>
+    <li th:each="m : ${museums}">
+        <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
+
+        </a>
+        <span class="removes" th:if="${user.museums.contains(m)}">
+            <form th:action="@{'~/museums/removeFromFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
+                <button type="submit">Remove from favorites</button>
+            </form>
+        </span>
+    </li>
+</ol>
+</body>
+</html>
