@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/museums")
 @CrossOrigin("*")
+@PreAuthorize("hasRole('ADMIN')")
 public class MuseumController {
     @Autowired
     private MuseumRepo museumRepo;

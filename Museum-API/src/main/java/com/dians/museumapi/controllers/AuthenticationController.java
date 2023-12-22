@@ -34,4 +34,17 @@ public class AuthenticationController {
 
         return "redirect:/museums";
     }
+
+    @GetMapping("/login")
+    public String showLoginForm() {
+        return "login";
+    }
+
+    @PostMapping("/login")
+    public String loginUser(
+            @RequestParam("username") String username,
+            @RequestParam("password") String password
+    ) {
+        return authenticationService.loginUser(username, password);
+    }
 }

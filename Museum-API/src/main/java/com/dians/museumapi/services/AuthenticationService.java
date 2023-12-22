@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -32,5 +33,16 @@ public class AuthenticationService {
         authorities.add(userRole);
 
         return userRepository.save(new User(0L, username, encodedPassword, authorities));
+    }
+
+    public String loginUser(String username, String password) {
+
+        Optional<User> foundUser = userRepository.findByUsername(username);
+
+        if (foundUser.isPresent() && passwordEncoder.matches(password, foundUser.get().getPassword())) {
+            return "redirect:/museums";
+        }
+
+        return "redirect:/auth/login";
     }
 }
