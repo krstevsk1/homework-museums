@@ -15,6 +15,19 @@
 </head>
 <body>
 <h1>All museums</h1>
+<th:block th:if="${user != null}">
+    <a href="/auth/logout">
+        <button>Log out</button>
+    </a>
+</th:block>
+<th:block th:if="${user == null}">
+    <a href="/auth/login">
+        <button>Log in</button>
+    </a>
+    <a href="/auth/register">
+        <button>Register</button>
+    </a>
+</th:block>
 <ol>
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
