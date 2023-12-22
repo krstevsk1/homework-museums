@@ -6,6 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.UuidGenerator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Entity
 @Table(name = "users")
@@ -19,4 +22,11 @@ public class User {
     private String username;
 
     private String password;
+    @ManyToMany
+    private List<Museum> museums;
+    public User(String username, String password){
+        this.username = username;
+        this.password = password;
+        this.museums = new ArrayList<>();
+    }
 }

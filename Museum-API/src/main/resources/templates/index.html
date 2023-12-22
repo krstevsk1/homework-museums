@@ -32,7 +32,21 @@
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
         </a>
+
+        <span class="removes" th:if="${user.museums.contains(m)}">
+            <form th:action="@{'~/museums/removeFromFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
+                <button type="submit">Remove from favorites</button>
+            </form>
+        </span>
+
+        <span class="adds" th:if="${!user.museums.contains(m)}">
+            <form th:action="@{'~/museums/addToFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
+                <button type="submit">Add to favorites</button>
+            </form>
+    </span>
+
     </li>
+
 </ol>
 </body>
 </html>
