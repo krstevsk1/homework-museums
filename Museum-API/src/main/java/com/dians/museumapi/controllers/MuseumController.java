@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -83,5 +84,12 @@ public class MuseumController {
         model.addAttribute("user", user2);
         model.addAttribute("museums", user2.getMuseums());
         return "my-museums";
+    }
+
+    @GetMapping("/search")
+    public String searchMuseums(@RequestParam(name = "searchTerm") String searchTerm, Model model) {
+        List<Museum> searchResults = museumService.searchMuseumsByName(searchTerm);
+        model.addAttribute("museumList", searchResults);
+        return "index";
     }
 }
