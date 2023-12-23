@@ -33,6 +33,12 @@
             display: inline-block;
         }
     </style>
+
+    <script>
+        function resetForm(){
+            window.location.href = '/museums'
+        }
+    </script>
 </head>
 <body>
 <h1>All museums</h1>
@@ -52,6 +58,16 @@
         <button>Register</button>
     </a>
 </th:block>
+
+<div class="search-bar">
+    <form action="#" th:action="@{/museums/search}" method="get">
+        <label for="search"></label>
+        <input id="search" name="searchTerm" type="text" class="input" placeholder="search..."/>
+        <button>Search</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+</div>
+
 <ol>
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>

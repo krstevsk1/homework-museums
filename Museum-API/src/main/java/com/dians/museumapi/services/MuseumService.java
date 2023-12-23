@@ -12,6 +12,8 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -75,6 +77,11 @@ public class MuseumService {
             }
         }
 
+    }
+
+    public List<Museum> searchMuseumsByName(String searchTerm) {
+        Optional<List<Museum>> optionalMuseums = museumRepo.findByMuseumNameContainingIgnoreCase(searchTerm);
+        return optionalMuseums.orElse(Collections.emptyList());
     }
 
     public Optional<Museum> findMuseumById(Long museumId) {

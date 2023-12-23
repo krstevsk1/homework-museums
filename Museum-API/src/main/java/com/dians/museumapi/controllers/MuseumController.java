@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -83,5 +84,19 @@ public class MuseumController {
         model.addAttribute("user", user2);
         model.addAttribute("museums", user2.getMuseums());
         return "my-museums";
+    }
+
+    @GetMapping("/search")
+    public String searchMuseums(@RequestParam(name = "searchTerm") String searchTerm, Model model, HttpServletRequest req) {
+        List<Museum> searchResults = museumService.searchMuseumsByName(searchTerm);
+        model.addAttribute("museumList", searchResults);
+        User user = (User) req.getSession().getAttribute("user");
+        //User user2 = userService.loadUserByUsername(user.getUsername());
+        User user2 = new User();
+        if (user != null){
+            user2 = userService.loadUserByUsername(user.getUsername());
+        }
+        model.addAttribute("user", user2);
+        return "index";
     }
 }
