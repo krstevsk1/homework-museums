@@ -87,9 +87,16 @@ public class MuseumController {
     }
 
     @GetMapping("/search")
-    public String searchMuseums(@RequestParam(name = "searchTerm") String searchTerm, Model model) {
+    public String searchMuseums(@RequestParam(name = "searchTerm") String searchTerm, Model model, HttpServletRequest req) {
         List<Museum> searchResults = museumService.searchMuseumsByName(searchTerm);
         model.addAttribute("museumList", searchResults);
+        User user = (User) req.getSession().getAttribute("user");
+        //User user2 = userService.loadUserByUsername(user.getUsername());
+        User user2 = new User();
+        if (user != null){
+            user2 = userService.loadUserByUsername(user.getUsername());
+        }
+        model.addAttribute("user", user2);
         return "index";
     }
 }
