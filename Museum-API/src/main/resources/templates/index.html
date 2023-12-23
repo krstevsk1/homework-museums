@@ -52,6 +52,15 @@
         <button>Register</button>
     </a>
 </th:block>
+
+<div class="search-bar">
+    <form action="#" th:action="@{/museums/search}" method="get">
+        <label for="search"></label>
+        <input id="search" name="searchTerm" type="text" class="input" placeholder="search..."/>
+        <button>Search</button>
+    </form>
+</div>
+
 <ol>
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
