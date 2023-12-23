@@ -38,7 +38,7 @@ public class AuthenticationService {
 
         User foundUser = userService.loadUserByUsername(username);
 
-        if (foundUser != null && !password.equals(foundUser.getPassword())) {
+        if (foundUser == null && !password.equals(foundUser.getPassword())) {
 
             throw new InvalidArgumentException();
         }
