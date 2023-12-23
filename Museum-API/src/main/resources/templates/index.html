@@ -11,20 +11,67 @@
             font-size: 20px;
             padding: 15px 0;
         }
+        form{
+            display: inline-block;
+        }
+
+        .removes button{
+            background-color: lightcoral;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .adds button{
+            background-color: lawngreen;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .user{
+            display: inline-block;
+            float: right;
+        }
+        h1{
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
 <h1>All museums</h1>
-<div class="search-bar">
-    <form>
-        <input id="search" type="text" class="input" placeholder="search..."/>
-    </form>
-</div>
+<th:block th:if="${user.getUsername() != null}">
+    <a href="/auth/logout">
+        <button>Log out</button>
+    </a>
+    <a href="/museums/myMuseums">
+        <button>My favorites</button>
+    </a>
+</th:block>
+<th:block th:if="${user.getUsername() == null}">
+    <a href="/auth/login">
+        <button>Log in</button>
+    </a>
+    <a href="/auth/register">
+        <button>Register</button>
+    </a>
+</th:block>
 <ol>
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
         </a>
+
+<!--        <th:block th:if="${user != null}">-->
+        <span class="removes" th:if="${user.getMuseums().contains(m)}">
+            <form th:action="@{'~/museums/removeFromFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
+                <button type="submit">Remove from favorites</button>
+            </form>
+        </span>
+
+        <span class="adds" th:if="${!user.getMuseums().contains(m)}">
+            <form th:action="@{'~/museums/addToFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
+                <button type="submit">Add to favorites</button>
+            </form>
+    </span>
+<!--        </th:block>-->
     </li>
+
 </ol>
 </body>
 </html>
