@@ -36,6 +36,7 @@ public class MuseumService {
                 doc.getDocumentElement().normalize();
                 NodeList nodeList = doc.getElementsByTagName("tag");
                 Museum m = new Museum();
+                // otkoga ke se instancira parsingContent, se polni mapata -> Map<String, ParsingStrategy> parseStrategyByKey
                 ParsingContext parsingContext = new ParsingContext();
                 for (int i = 0; i < nodeList.getLength(); i++) {
                     Node node = nodeList.item(i);
@@ -43,7 +44,7 @@ public class MuseumService {
                         Element element = (Element) node;
                         String key = element.getAttribute("k");
                         String value = element.getAttribute("v");
-                        //
+                        // vo zavisnost od klucot na xml tagot (key), se povikuva soodvetniot XMLparser i se izvrshuva soodvetniot algoritam.
                         parsingContext.parse(key,value,m);
                     }
                 }
