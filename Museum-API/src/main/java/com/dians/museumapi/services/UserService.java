@@ -3,6 +3,7 @@ package com.dians.museumapi.services;
 import com.dians.museumapi.models.*;
 import com.dians.museumapi.repositories.MuseumRepo;
 import com.dians.museumapi.repositories.UserRepository;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,6 +39,6 @@ public class UserService {
             user.getMuseums().remove(museum);
             userRepository.save(user);
         }
-
     }
+
 }

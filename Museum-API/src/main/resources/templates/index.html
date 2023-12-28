@@ -25,12 +25,9 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
-        .user{
-            display: inline-block;
-            float: right;
-        }
         h1{
             display: inline-block;
+            margin-right: 20px;
         }
     </style>
 
@@ -42,7 +39,7 @@
 </head>
 <body>
 <h1>All museums</h1>
-<th:block th:if="${user.getUsername() != null}">
+<th:block th:if="${user.getUsername() != null && !user.getUsername().isEmpty()}">
     <a href="/auth/logout">
         <button>Log out</button>
     </a>
@@ -50,7 +47,7 @@
         <button>My favorites</button>
     </a>
 </th:block>
-<th:block th:if="${user.getUsername() == null}">
+<th:block th:if="${user.getUsername() == null || user.getUsername().isEmpty()}">
     <a href="/auth/login">
         <button>Log in</button>
     </a>
@@ -60,7 +57,7 @@
 </th:block>
 
 <div class="search-bar">
-    <form action="#" th:action="@{/museums/search}" method="get">
+    <form th:action="@{/museums/search}" method="get">
         <label for="search"></label>
         <input id="search" name="searchTerm" type="text" class="input" placeholder="search..."/>
         <button>Search</button>
@@ -72,8 +69,6 @@
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
         </a>
-
-<!--        <th:block th:if="${user != null}">-->
         <span class="removes" th:if="${user.getMuseums().contains(m)}">
             <form th:action="@{'~/museums/removeFromFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
                 <button type="submit">Remove from favorites</button>
@@ -84,8 +79,7 @@
             <form th:action="@{'~/museums/addToFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
                 <button type="submit">Add to favorites</button>
             </form>
-    </span>
-<!--        </th:block>-->
+        </span>
     </li>
 
 </ol>

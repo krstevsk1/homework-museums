@@ -26,12 +26,8 @@ public class MuseumController {
     @GetMapping()
     public String getHomePage(HttpServletRequest request, Model model){
         museumService.parseFiles();
-        User user = (User) request.getSession().getAttribute("user");
-        User user2 = new User();
-        if (user != null){
-            user2 = userService.loadUserByUsername(user.getUsername());
-        }
-        model.addAttribute("user", user2);
+        User user = getUser(request);
+        model.addAttribute("user", user);
         model.addAttribute("museumList", museumService.findAll());
         return "index";
     }
@@ -45,8 +41,8 @@ public class MuseumController {
 
     @PostMapping("/addToFavorites/{museumId}")
     public String addMuseumToUser(@PathVariable Long museumId, HttpServletRequest req){
-        User user = (User) req.getSession().getAttribute("user");
-        if (user == null){
+        User user = getUser(req);
+        if (checkForUserInSession(user)){
             return "redirect:/auth/login";
         }
         Museum museum = museumService.findMuseumById(museumId);
@@ -56,40 +52,44 @@ public class MuseumController {
 
     @PostMapping("/removeFromFavorites/{museumId}")
     public String removeMuseumToUser(@PathVariable Long museumId, HttpServletRequest req){
-        Museum museum = museumService.findMuseumById(museumId);
-        User user = (User) req.getSession().getAttribute("user");
-        if (user == null){
+        User user = getUser(req);
+        if (checkForUserInSession(user)){
             return "redirect:/auth/login";
         }
+        Museum museum = museumService.findMuseumById(museumId);
         userService.removeMuseumFromUser(museum.getMuseumId(), user.getUsername());
         return "redirect:/museums";
     }
 
     @GetMapping("/myMuseums")
     public String getMyMuseums(HttpServletRequest req, Model model){
-        User user = (User) req.getSession().getAttribute("user");
-        User user2 = new User();
-        if (user != null){
-            user2 = userService.loadUserByUsername(user.getUsername());
-        }
-        if (user == null){
+        User user = getUser(req);
+        if (checkForUserInSession(user)){
             return "redirect:/auth/login";
         }
-        model.addAttribute("user", user2);
-        model.addAttribute("museums", user2.getMuseums());
+        model.addAttribute("user", user);
+        model.addAttribute("museums", user.getMuseums());
         return "my-museums";
     }
 
     @GetMapping("/search")
     public String searchMuseums(@RequestParam(name = "searchTerm") String searchTerm, Model model, HttpServletRequest req) {
         List<Museum> searchResults = museumService.searchMuseumsByName(searchTerm);
+        User user = getUser(req);
+        model.addAttribute("user", user);
         model.addAttribute("museumList", searchResults);
-        User user = (User) req.getSession().getAttribute("user");
-        User user2 = new User();
-        if (user != null){
-            user2 = userService.loadUserByUsername(user.getUsername());
-        }
-        model.addAttribute("user", user2);
         return "index";
     }
+
+    // zemi go korisnikot vo sesija
+    // ako ne e vo sesija kreiraj prazen User(). Simulira user guest
+    private User getUser(HttpServletRequest req){
+        User userInSession = (User) req.getSession().getAttribute("user");
+        return userInSession != null ? userService.loadUserByUsername(userInSession.getUsername()) : new User();
+    }
+
+    private boolean checkForUserInSession(User user){
+        return user.getUsername() == null || user.getUsername().isEmpty();
+    }
+
 }

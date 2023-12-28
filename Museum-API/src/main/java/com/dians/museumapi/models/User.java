@@ -31,6 +31,8 @@ public class User {
     }
 
     public User() {
+        this.username = "";
+        this.password = "";
         this.museums = new ArrayList<>();
     }
 }
