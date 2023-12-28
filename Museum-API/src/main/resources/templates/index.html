@@ -80,7 +80,7 @@
             </form>
         </span>
 
-        <span class="adds" th:if="${!user.getMuseums().contains(m)}">
+        <span class="adds" th:if="${user.getMuseums().contains(m)==false}">
             <form th:action="@{'~/museums/addToFavorites/{museumId}' (museumId=${m.museumId})}" method="POST">
                 <button type="submit">Add to favorites</button>
             </form>

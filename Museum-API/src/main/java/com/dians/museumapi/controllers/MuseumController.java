@@ -19,8 +19,6 @@ import java.util.Optional;
 @CrossOrigin("*")
 public class MuseumController {
     @Autowired
-    private MuseumRepo museumRepo;
-    @Autowired
     private MuseumService museumService;
     @Autowired
     private UserService userService;
@@ -34,18 +32,15 @@ public class MuseumController {
             user2 = userService.loadUserByUsername(user.getUsername());
         }
         model.addAttribute("user", user2);
-        model.addAttribute("museumList", museumRepo.findAll());
+        model.addAttribute("museumList", museumService.findAll());
         return "index";
     }
 
     @GetMapping("/detailedMuseum/{id}")
     public String getDetailedMuseum(@PathVariable Long id, Model model){
-        if (museumRepo.findById(id).isPresent()){
-            Museum museum = museumRepo.findById(id).get();
-            model.addAttribute("museum", museum);
-            return "detailsMuseum";
-        }
-        return "redirect:/museums";
+        Museum museum = museumService.findMuseumById(id);
+        model.addAttribute("museum", museum);
+        return "detailsMuseum";
     }
 
     @PostMapping("/addToFavorites/{museumId}")
@@ -54,26 +49,25 @@ public class MuseumController {
         if (user == null){
             return "redirect:/auth/login";
         }
-        Optional<Museum> museum = museumService.findMuseumById(museumId);
-        userService.addMuseumToUser(museum.get().getMuseumId(), user.getUsername());
+        Museum museum = museumService.findMuseumById(museumId);
+        userService.addMuseumToUser(museum.getMuseumId(), user.getUsername());
         return "redirect:/museums";
     }
 
     @PostMapping("/removeFromFavorites/{museumId}")
     public String removeMuseumToUser(@PathVariable Long museumId, HttpServletRequest req){
-        Optional<Museum> museum = museumService.findMuseumById(museumId);
+        Museum museum = museumService.findMuseumById(museumId);
         User user = (User) req.getSession().getAttribute("user");
         if (user == null){
             return "redirect:/auth/login";
         }
-        userService.removeMuseumFromUser(museum.get().getMuseumId(), user.getUsername());
+        userService.removeMuseumFromUser(museum.getMuseumId(), user.getUsername());
         return "redirect:/museums";
     }
 
     @GetMapping("/myMuseums")
     public String getMyMuseums(HttpServletRequest req, Model model){
         User user = (User) req.getSession().getAttribute("user");
-        //User user2 = userService.loadUserByUsername(user.getUsername());
         User user2 = new User();
         if (user != null){
             user2 = userService.loadUserByUsername(user.getUsername());
@@ -91,7 +85,6 @@ public class MuseumController {
         List<Museum> searchResults = museumService.searchMuseumsByName(searchTerm);
         model.addAttribute("museumList", searchResults);
         User user = (User) req.getSession().getAttribute("user");
-        //User user2 = userService.loadUserByUsername(user.getUsername());
         User user2 = new User();
         if (user != null){
             user2 = userService.loadUserByUsername(user.getUsername());
