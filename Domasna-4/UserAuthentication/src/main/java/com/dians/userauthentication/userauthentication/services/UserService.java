@@ -1,7 +1,9 @@
 package com.dians.userauthentication.userauthentication.services;
 
-import com.dians.museumapi.repositories.MuseumRepo;
-import com.dians.museumapi.repositories.UserRepository;
+import com.dians.userauthentication.userauthentication.models.*;
+import com.dians.userauthentication.userauthentication.models.exception.*;
+import com.dians.userauthentication.userauthentication.repositories.MuseumRepo;
+import com.dians.userauthentication.userauthentication.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

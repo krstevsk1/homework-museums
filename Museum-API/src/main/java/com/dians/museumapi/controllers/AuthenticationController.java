@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.NoSuchElementException;
 
@@ -20,10 +21,13 @@ public class AuthenticationController {
 
     @Autowired
     private AuthenticationService authenticationService;
+    @Autowired
+    private RestTemplate restTemplate;
 
     @GetMapping("/register")
     public String showRegistrationForm() {
-        return "register";
+        return "redirect:http://localhost:8081/auth/ms/register";
+        //return "register";
     }
 
     @PostMapping("/register")
@@ -49,14 +53,12 @@ public class AuthenticationController {
     @PostMapping("/login")
     public String login(HttpServletRequest request) {
         User user = null;
-
         try {
             user = authenticationService.loginUser(request.getParameter("username"), request.getParameter("password"));
             request.getSession().setAttribute("user", user);
         } catch (InvalidArgumentException | NoSuchElementException  exception ) {
             return "redirect:/auth/login?error="+exception.getMessage();
         }
-
         return "redirect:/museums";
     }
 

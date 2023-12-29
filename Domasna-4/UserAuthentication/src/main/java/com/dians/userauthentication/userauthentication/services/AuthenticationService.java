@@ -1,10 +1,7 @@
 package com.dians.userauthentication.userauthentication.services;
-
-import com.dians.museumapi.models.User;
-import com.dians.museumapi.models.exception.InvalidArgumentException;
-import com.dians.museumapi.models.exception.PasswordsDoNotMatchException;
-import com.dians.museumapi.models.exception.UsernameAlreadyExistsException;
-import com.dians.museumapi.repositories.UserRepository;
+import com.dians.userauthentication.userauthentication.models.*;
+import com.dians.userauthentication.userauthentication.models.exception.*;
+import com.dians.userauthentication.userauthentication.repositories.UserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,9 +32,7 @@ public class AuthenticationService {
     }
 
     public User loginUser(String username, String password) {
-
         User foundUser = userService.loadUserByUsername(username);
-
         if (foundUser == null && !password.equals(foundUser.getPassword())) {
 
             throw new InvalidArgumentException();
