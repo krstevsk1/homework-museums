@@ -36,23 +36,23 @@ public class AuthenticationController {
 //        model.addAttribute("response", responseFromMicroservice);
 //        System.out.println("response is" + responseFromMicroservice);
         return "redirect:http://localhost:8081/auth/ms/register";
-//        return "register";
+        //return "register";
     }
 
-    @PostMapping("/register")
-    public String registerUser(
-            @RequestParam("username") String username,
-            @RequestParam("password") String password,
-            @RequestParam("confirmPassword") String confirmPassword
-    ) {
-        try {
-            authenticationService.registerUser(username, password, confirmPassword);
-            return "redirect:/auth/login";
-        }
-        catch (InvalidArgumentException | PasswordsDoNotMatchException | UsernameAlreadyExistsException exception) {
-            return "redirect:/auth/register?error=" + exception.getMessage();
-        }
-    }
+//    @PostMapping("/register")
+//    public String registerUser(
+//            @RequestParam("username") String username,
+//            @RequestParam("password") String password,
+//            @RequestParam("confirmPassword") String confirmPassword
+//    ) {
+//        try {
+//            authenticationService.registerUser(username, password, confirmPassword);
+//            return "redirect:/auth/login";
+//        }
+//        catch (InvalidArgumentException | PasswordsDoNotMatchException | UsernameAlreadyExistsException exception) {
+//            return "redirect:/auth/register?error=" + exception.getMessage();
+//        }
+//    }
 
     @GetMapping("/login")
     public String showLoginForm() {
@@ -60,17 +60,17 @@ public class AuthenticationController {
         //return "login";
     }
 
-    @PostMapping("/login")
-    public String login(HttpServletRequest request) {
-        User user = null;
-        try {
-            user = authenticationService.loginUser(request.getParameter("username"), request.getParameter("password"));
-            request.getSession().setAttribute("user", user);
-        } catch (InvalidArgumentException | NoSuchElementException  exception ) {
-            return "redirect:/auth/login?error="+exception.getMessage();
-        }
-        return "redirect:/museums";
-    }
+//    @PostMapping("/login")
+//    public String login(HttpServletRequest request) {
+//        User user = null;
+//        try {
+//            user = authenticationService.loginUser(request.getParameter("username"), request.getParameter("password"));
+//            request.getSession().setAttribute("user", user);
+//        } catch (InvalidArgumentException | NoSuchElementException  exception ) {
+//            return "redirect:/auth/login?error="+exception.getMessage();
+//        }
+//        return "redirect:/museums";
+//    }
 
     @GetMapping("/logout")
     public String logout(HttpServletRequest request) {
