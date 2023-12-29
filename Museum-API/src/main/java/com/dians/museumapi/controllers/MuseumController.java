@@ -24,9 +24,17 @@ public class MuseumController {
     private UserService userService;
 
     @GetMapping()
-    public String getHomePage(HttpServletRequest request, Model model){
+    public String getHomePage(@RequestParam(required = false) String username,
+                              HttpServletRequest request,
+                              Model model){
         museumService.parseFiles();
+        if (username != null){
+            System.out.println(1);
+            request.getSession().setAttribute("user", userService.loadUserByUsername(username));
+            return "redirect:/museums";
+        }
         User user = getUser(request);
+        System.out.println(user);
         model.addAttribute("user", user);
         model.addAttribute("museumList", museumService.findAll());
         return "index";

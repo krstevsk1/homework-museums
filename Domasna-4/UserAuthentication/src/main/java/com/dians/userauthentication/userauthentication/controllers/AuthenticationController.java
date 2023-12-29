@@ -37,7 +37,6 @@ public class AuthenticationController {
             return "redirect:/auth/ms/login";
         } catch (InvalidArgumentException | PasswordsDoNotMatchException | UsernameAlreadyExistsException exception) {
             return "redirect:/auth/ms/register?error=" + exception.getMessage();
-            //return "redirect:/auth/ms/register";
         }
     }
 
@@ -54,12 +53,9 @@ public class AuthenticationController {
     ) {
         try {
             User user = authenticationService.loginUser(username, password);
-            request.getSession().setAttribute("user", user);
-            return "redirect:http://localhost:8080/museums";
+            return "redirect:http://localhost:8080/museums?username="+user.getUsername();
         } catch (InvalidArgumentException | NoSuchElementException exception) {
-            //model.addAttribute("error", exception.getMessage());
             return "redirect:/auth/ms/login?error="+exception.getMessage();
-            //return "redirect:/auth/ms/login";
         }
     }
 

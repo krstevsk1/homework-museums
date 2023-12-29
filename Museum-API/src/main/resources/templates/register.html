@@ -3,8 +3,20 @@
 <head>
     <title>User Registration</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<!--    <script>-->
+<!--        $(document).ready(function() {-->
+<!--            $.get("http://localhost:8081/auth/ms/register", function(data) {-->
+<!--                $("#registrationContent").html(data); // Inject fetched HTML into a specific div-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
 </head>
 <body>
+<!--<div id="registrationContent">-->
+<!--    &lt;!&ndash; Placeholder for the received HTML content &ndash;&gt;-->
+<!--    <p th:utext="${response}"></p>-->
+<!--</div>-->
 <div class="container mt-5">
     <h2>User Registration</h2>
     <form th:action="@{/auth/register}" method="post">

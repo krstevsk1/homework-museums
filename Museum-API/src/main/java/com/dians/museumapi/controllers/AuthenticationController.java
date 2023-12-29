@@ -7,6 +7,9 @@ import com.dians.museumapi.models.exception.UsernameAlreadyExistsException;
 import com.dians.museumapi.services.AuthenticationService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -25,9 +28,15 @@ public class AuthenticationController {
     private RestTemplate restTemplate;
 
     @GetMapping("/register")
-    public String showRegistrationForm() {
+    public String showRegistrationForm(Model model) {
+//        String microserviceEndpoint = "http://localhost:8081/auth/ms/register";
+//
+//        String responseFromMicroservice = restTemplate.getForObject(microserviceEndpoint, String.class);
+//
+//        model.addAttribute("response", responseFromMicroservice);
+//        System.out.println("response is" + responseFromMicroservice);
         return "redirect:http://localhost:8081/auth/ms/register";
-        //return "register";
+//        return "register";
     }
 
     @PostMapping("/register")
