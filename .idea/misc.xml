@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/Museum-API/pom.xml" />
         <option value="$PROJECT_DIR$/UserAuthentication/pom.xml" />
+        <option value="$PROJECT_DIR$/Domasna-4/UserAuthentication/pom.xml" />
       </list>
     </option>
   </component>

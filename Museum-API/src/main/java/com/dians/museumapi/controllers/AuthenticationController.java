@@ -32,8 +32,6 @@ public class AuthenticationController {
             @RequestParam("password") String password,
             @RequestParam("confirmPassword") String confirmPassword
     ) {
-
-
         try {
             authenticationService.registerUser(username, password, confirmPassword);
             return "redirect:/auth/login";
