@@ -1,9 +1,11 @@
 package com.dians.userauthentication.userauthentication.controllers;
 
+import com.dians.userauthentication.userauthentication.models.User;
 import com.dians.userauthentication.userauthentication.models.exception.InvalidArgumentException;
 import com.dians.userauthentication.userauthentication.models.exception.PasswordsDoNotMatchException;
 import com.dians.userauthentication.userauthentication.models.exception.UsernameAlreadyExistsException;
 import com.dians.userauthentication.userauthentication.services.AuthenticationService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.NoSuchElementException;
 
 @Controller
 @RequestMapping("/auth/ms")
@@ -37,7 +41,27 @@ public class AuthenticationController {
         }
     }
 
-    
+    @GetMapping("/login")
+    public String showLoginForm() {
+        return "login";
+    }
+
+    @PostMapping("/login")
+    public String login(
+            @RequestParam String username,
+            @RequestParam String password,
+            HttpServletRequest request
+    ) {
+        try {
+            User user = authenticationService.loginUser(username, password);
+            request.getSession().setAttribute("user", user);
+            return "redirect:http://localhost:8080/museums";
+        } catch (InvalidArgumentException | NoSuchElementException exception) {
+            //model.addAttribute("error", exception.getMessage());
+            return "redirect:/auth/ms/login?error="+exception.getMessage();
+            //return "redirect:/auth/ms/login";
+        }
+    }
 
 
 }

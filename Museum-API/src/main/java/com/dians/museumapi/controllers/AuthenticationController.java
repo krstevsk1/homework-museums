@@ -47,7 +47,8 @@ public class AuthenticationController {
 
     @GetMapping("/login")
     public String showLoginForm() {
-        return "login";
+        return "redirect:http://localhost:8081/auth/ms/login";
+        //return "login";
     }
 
     @PostMapping("/login")
