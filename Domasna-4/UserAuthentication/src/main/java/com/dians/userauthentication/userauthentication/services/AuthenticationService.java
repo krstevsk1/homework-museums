@@ -3,6 +3,7 @@ import com.dians.userauthentication.userauthentication.models.*;
 import com.dians.userauthentication.userauthentication.models.exception.*;
 import com.dians.userauthentication.userauthentication.repositories.UserRepository;
 import jakarta.transaction.Transactional;
+import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,15 +27,15 @@ public class AuthenticationService {
         if (!userRepository.findByUsername(username).isEmpty()){
             throw new UsernameAlreadyExistsException(username);
         }
-
-        User user = new User(username,password);
+        String encPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+        User user = new User(username,encPassword);
         return userRepository.save(user);
     }
 
     public User loginUser(String username, String password) {
         User foundUser = userService.loadUserByUsername(username);
-        if (foundUser == null && !password.equals(foundUser.getPassword())) {
-
+        String encPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+        if (foundUser == null && !BCrypt.checkpw(password,encPassword)) {
             throw new InvalidArgumentException();
         }
 
