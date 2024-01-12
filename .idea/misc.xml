@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/Domasna-4/DetailedVIew" />
+    <file type="web" url="file://$PROJECT_DIR$/Domasna-4/DetailedView" />
     <file type="web" url="file://$PROJECT_DIR$/Домашна-3/demo" />
   </component>
   <component name="MavenProjectsManager">
@@ -15,7 +15,6 @@
         <option value="$PROJECT_DIR$/Domasna-4/DetailedView/pom.xml" />
       </list>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
