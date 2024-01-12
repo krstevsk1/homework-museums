@@ -5,10 +5,8 @@ import com.dians.userauthentication.userauthentication.models.exception.InvalidA
 import com.dians.userauthentication.userauthentication.models.exception.PasswordsDoNotMatchException;
 import com.dians.userauthentication.userauthentication.models.exception.UsernameAlreadyExistsException;
 import com.dians.userauthentication.userauthentication.services.AuthenticationService;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -48,8 +46,7 @@ public class AuthenticationController {
     @PostMapping("/login")
     public String login(
             @RequestParam String username,
-            @RequestParam String password,
-            HttpServletRequest request
+            @RequestParam String password
     ) {
         try {
             User user = authenticationService.loginUser(username, password);
