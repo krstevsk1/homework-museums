@@ -39,9 +39,7 @@ public class MuseumController {
     }
 
     @GetMapping("/detailedMuseum/{id}")
-    public String getDetailedMuseum(@PathVariable Long id, Model model){
-        //Museum museum = museumService.findMuseumById(id);
-        //model.addAttribute("museum", museum);
+    public String getDetailedMuseum(@PathVariable Long id){
         return "redirect:http://localhost:8082/detailed/"+id;
     }
 
