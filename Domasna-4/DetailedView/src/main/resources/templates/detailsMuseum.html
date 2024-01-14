@@ -7,12 +7,35 @@
         td{
             border: 1px solid black;
             padding: 10px 25px;
+
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        h1{
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px 110px;
+            background-color: rgba(83, 97, 42, 0.5);
+        }
+        h1, table {
+            margin-bottom: 20px;
+        }
+        #container-background{
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px 100px;
         }
     </style>
 </head>
 <body>
-<h1>Detailed view for <i th:text="${museum.getMuseumName()}"></i></h1>
+<div id="container">
+<h1><i th:text="${museum.getMuseumName()}"></i></h1>
 <br/>
+    <div id="container-background">
 <table>
     <tr th:if="${!#strings.isEmpty(museum.getCity())}">
         <td>City: </td>
@@ -39,5 +62,7 @@
         <td><a th:href="${museum.getWebsite()}" th:text="${museum.getWebsite()}"></a></td>
     </tr>
 </table>
+    </div>
+</div>
 </body>
 </html>
