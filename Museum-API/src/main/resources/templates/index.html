@@ -19,16 +19,11 @@
         form{
             display: inline-block;
         }
-
         .removes button{
             background-color: lightcoral;
-            padding: 5px 10px;
-            border-radius: 5px;
         }
         .adds button{
             background-color: lawngreen;
-            padding: 5px 10px;
-            border-radius: 5px;
         }
         h1{
             display: inline-block;
@@ -45,9 +40,14 @@
         button{
             padding: 5px 10px;
             border-radius: 5px;
+            font-size: 15px;
         }
         #container{
             text-align: center;
+        }
+        #search{
+            height: 25px;
+            font-size: 16px;
         }
     </style>
 
@@ -78,10 +78,11 @@
     </a>
 </th:block>
 <br/>
+<br/>
 <div class="search-bar">
     <form th:action="@{/museums/search}" method="get">
         <label for="search"></label>
-        <input id="search" name="searchTerm" type="text" class="input" placeholder="search..."/>
+        <input id="search" name="searchTerm" type="text" class="input" placeholder="Search..."/>
         <button>Search</button>
         <button type="button" onclick="resetForm()">Reset</button>
     </form>
