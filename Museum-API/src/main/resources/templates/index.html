@@ -94,7 +94,6 @@
         <button type="button" onclick="resetForm()">Reset</button>
     </form>
 </div>
-
 <ol>
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
