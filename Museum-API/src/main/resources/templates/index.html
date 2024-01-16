@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
     <style>
-        ol{
-            list-style-type: none;
-            padding: 0;
-            width: 100%;
-        }
         a{
             text-decoration: none;
             margin-right: 20px;
@@ -49,16 +44,28 @@
             border-radius: 5px;
             font-size: 15px;
         }
-        #container{
-            text-align: center;
+        .container{
+            display: grid;
+            place-items: center;
+        }
+        #container-background{
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px 100px;
+            background-color: rgba(83, 97, 42, 0.5);
         }
         #search{
             height: 25px;
             font-size: 16px;
         }
         body{
-            background-image: url("/index_background.png");
-            background-repeat: repeat-y;
+            background-image: url("/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        ul{
+            list-style: none;
+            align-content: center;
         }
         li a span{
             color: antiquewhite;
@@ -71,10 +78,11 @@
         }
     </script>
 </head>
-<body>
-<div id="container">
+<body class="container">
+<div id="container-background" class="container" style="width: 40%">
 <h1>All museums</h1>
     <br/>
+    <div>
 <th:block th:if="${user.getUsername() != null && !user.getUsername().isEmpty()}">
     <a href="/auth/logout">
         <button id="logout-btn">Log out</button>
@@ -91,6 +99,7 @@
         <button id="register-btn">Register</button>
     </a>
 </th:block>
+     </div>
 <br/>
 <br/>
 <div class="search-bar">
@@ -101,7 +110,7 @@
         <button type="button" onclick="resetForm()">Reset</button>
     </form>
 </div>
-<ol>
+<ul>
     <li th:each="m : ${museumList}">
         <a th:href="@{'~/museums/detailedMuseum/{id}' (id=${m.getMuseumId()})}"><span th:text="${m.getMuseumName()}"></span>
         </a>
@@ -118,7 +127,8 @@
         </span>
     </li>
 
-</ol>
+</ul>
+    </div>
 </div>
 </body>
 </html>
