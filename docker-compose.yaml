@@ -22,4 +22,6 @@ services:
     database:
       build:
         context: ./database/museumdb
+      ports:
+        - "3306:3306"
 
