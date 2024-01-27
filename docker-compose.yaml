@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+    museum-api:
+      build:
+        context: ./Museum-API
+      ports:
+        - "8080:8080"
+
+    detailed-view:
+      build:
+        context: ./Domasna-4/DetailedView
+      ports:
+        -  "8082:8082"
+
+    user-authentication:
+      build:
+        context: ./Domasna-4/UserAuthentication
+      ports:
+        - "8081:8081"
+
+    database:
+      build:
+        context: ./database/museumdb
+
