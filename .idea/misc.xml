@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/Domasna-4/DetailedView/pom.xml" />
       </list>
     </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
